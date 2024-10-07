@@ -2,7 +2,7 @@ from transformers import pipeline
 import os
 
 # Hugging Face API Key (store in environment variables for security)
-API_KEY = os.getenv('HUGGINGFACE_API_KEY', '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')  # Replace with your Hugging Face API key
+API_KEY = os.getenv('HUGGINGFACE_API_KEY', '')  # Replace with your Hugging Face API key
 
 def get_job_recommendations(job_title):
     # Initialize the LLM model using the Hugging Face pipeline
